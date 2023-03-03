@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="valentine">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body onload="fetchCategories()" class="container">
+  <header>
+    <section>
+      <!-- Navigation Section -->
+      <div class="navbar bg-sky-400 shadow  mx-auto">
+        <div class="flex-1 ml-6">
+          <button class="btn btn-primary rounded ">News</button>
+          <h4 class="text-2xl">Portal</h4>
+        </div>
+        <div class="flex-none gap-2">
+          <div class="form-control">
+            <input type="text" placeholder="Search" class="input input-bordered" />
+          </div>
+          <div class="dropdown dropdown-end">
+            <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+              <div class="w-10 rounded-full">
+                <img src="image/Avatar.png" />
+              </div>
+            </label>
+            <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+              <li>
+                <a class="justify-between">
+                  Profile
+                  <span class="badge">New</span>
+                </a>
+              </li>
+              <li><a>Settings</a></li>
+              <li><a>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="categories-container" class="flex mt-12 justify-center">
+
+    </section>
+  </header>
+  <main class="container">
+  
+      <!-- alert section --> 
+       <section class="container">
+
+      <div class="container alert alert-light shadow-lg mt-5 mb-5 mx-auto">
+        <div class="">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            class="stroke-current flex-shrink-0  h-3 w-2">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <span> <span id="news-count">4</span> software update available <span
+              id="news-category">Entertainment</span>.</span>
+        </div>
+      </div>
+    </section>
+    <section class="">
+      <div class="">
+        <div class="bg-info">
+          <span class="w-25">Short By:</span>
+        </div>
+
+        <div class="">
+          <select class="form-select " aria-label="Default select example">
+            <option selected>Default</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <button>Todays pick</button>
+        <button>Trending</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+
+</html>
